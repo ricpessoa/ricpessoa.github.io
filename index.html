@@ -8,7 +8,8 @@
 				
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/timeline.css" />
-
+		<link rel="stylesheet" href="assets/css/skillsbar.css">
+		<link rel="stylesheet" href="assets/css/style.css" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 
@@ -27,7 +28,7 @@
 						<div id="logo">
 							<span><img class="img-circle" src="images/avatar.jpg" alt="" /></span>
 							<h1 id="title">Ricardo Pessoa</h1>
-							<p>Mobile Developper</p>
+							<p>Mobile Developer</p>
 						</div>
 
 					<!-- Nav -->
@@ -127,16 +128,60 @@
 								<ul class="nav nav-tabs" role="tablist">
 									<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Programming Languages</a></li>
 									<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">IDE</a></li>
-									<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Frameworks</a></li>
-									<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Others</a></li>
 								</ul>
 
 								<!-- Tab panes -->
 								<div class="tab-content">
-									<div role="tabpanel" class="tab-pane active" id="home">Java, Objective-C Swift, PHP</div>
-									<div role="tabpanel" class="tab-pane" id="profile">Android Studio, Xcode, Sublime Text 2</div>
-									<div role="tabpanel" class="tab-pane" id="messages">JQuery, PHP Slim Framework</div>
-									<div role="tabpanel" class="tab-pane" id="settings">Photoshop, Photography</div>
+									<div role="tabpanel" class="tab-pane active" id="home">
+										<!-- Skills Programmer Progress Bar -->
+									    <section id="skills-pgr">
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="75">
+									                <span>Java (8/10)</span>
+									            </div>
+									        </div>
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="60">
+									                <span>PHP (6/10)</span>
+									            </div>
+									        </div>
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="50">
+									                <span>Objective C and Swift (5/10)</span>
+									            </div>
+									        </div>
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="60">
+									                <span>JavaScript/jQuery (6/10)</span>
+									            </div>
+									        </div>
+									    </section>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="profile">
+										<!-- Skills IDES Progress Bar -->
+									    <section id="skills-pgr">
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="85">
+									                <span>Android Studio (9/10)</span>
+									            </div>
+									        </div>
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="80">
+									                <span>NetBeans (8/10)</span>
+									            </div>
+									        </div>
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="70">
+									                <span>Xcode (7/10)</span>
+									            </div>
+									        </div>
+									        <div class="progress">
+									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="65">
+									                <span>Sublime Text 2 (7/10)</span>
+									            </div>
+									        </div>
+									    </section>
+									</div>
 								</div>
 							</div>
 
@@ -179,7 +224,7 @@
 							          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
 							          <div class="timeline-panel">
 							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Android and Web develop in Fraunhofer, Portugal</h4>
+							              <h4 class="timeline-title">Android and Web developer in Fraunhofer, Portugal</h4>
 							              <small class="text-muted"><i class="glyphicon glyphicon-time"></i> June 2013 – November 2013 (6 months)</small>
 							            </div>
 							          </div>
@@ -228,7 +273,7 @@
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/pic02.jpg" alt=""  data-toggle="modal" data-target=".bs-example-modal-lg"/></a>
 										<header>
 											<h3>Ipsum Feugiat</h3>
 										</header>
@@ -271,6 +316,20 @@
 							</div>
 
 						</div>
+
+
+						<!-- Large modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+						<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+						  <div class="modal-dialog modal-lg">
+						    <div class="modal-content">
+						      ...
+						    </div>
+						  </div>
+						</div>
+
+
 					</section>
 
 				
@@ -324,6 +383,27 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+			<script type="text/javascript">
+					// Skills Progress Bar
+					$('.progress-bar').each(function() {
+					  
+					  	var $bar = $(this);
+					    var progress = setInterval(function() {
+					      
+					      var currWidth = parseInt($bar.attr('aria-valuenow'));
+					      var maxWidth = parseInt($bar.attr('aria-valuemax'));
+					      
+						  //update the progress
+					        $bar.width(currWidth+'%');
+					        $bar.attr('aria-valuenow',currWidth+5);
+					      
+					      //clear timer when max is reach
+					      if (currWidth >= maxWidth){
+					        clearInterval(progress);
+					      }
+					      
+					    }, 100);
+				});
+			</script>
 	</body>
 </html>
