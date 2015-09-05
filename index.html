@@ -16,7 +16,6 @@
 		<!-- Latest compiled and minified CSS -->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		 <script src="https://www.google.com/recaptcha/api.js"></script>
 	</head>
 	<body>
 
@@ -80,7 +79,7 @@
 							<li><a href="https://github.com/ricpessoa" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="https://www.facebook.com/rdpessoa" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="https://plus.google.com/117511392420164591257/" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="mailto:rpessoa@outlook.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -209,6 +208,7 @@
 						    	<div class="link-box">
 					               <a href="https://itunes.apple.com/us/app/lapa-find-your-keys-bags-wallets/id891485732?mt=8">AppStore</a>
 					               <a href="https://play.google.com/store/apps/details?id=lapastudio.lapaapp">Google Play</a>
+					               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					            </div>
 						    </div>
 						  </div>
@@ -222,7 +222,7 @@
 								  <iframe class="embed-responsive-item" src="https://youtu.be/eQ0GWUEwEKI"></iframe>
 								</div> -->
 								<div class="embed-responsive embed-responsive-16by9">
-								    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eQ0GWUEwEKI"></iframe>
+								    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eQ0GWUEwEKI?enablejsapi=1"></iframe>
 								</div>
 						    	<div class="description-box">
 							      <h4>ChildSafe</h4>
@@ -233,6 +233,8 @@
 				               <span class="categories"><i class="fa fa-tag"></i>Android, Web Development, NoSQL</span>
 						      </div>
 						    	<div class="link-box">
+						    		<p><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></p>
+						    		
 					            </div>
 						    </div>
 						  </div>
@@ -242,11 +244,12 @@
 						  <div class="modal-dialog modal-lg">
 
 						    <div class="modal-content">
+						    	
 						    	<!-- <div class="embed-responsive embed-responsive-16by9">
 								  <iframe class="embed-responsive-item" src="https://youtu.be/eQ0GWUEwEKI"></iframe>
 								</div> -->
 								<div class="embed-responsive embed-responsive-16by9">
-								    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eQ0GWUEwEKI"></iframe>
+								    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PeDbaTP_eqY?enablejsapi=1"></iframe>
 								</div>
 						    	<div class="description-box">
 							      <h4>MyListBox</h4>
@@ -257,6 +260,7 @@
 						      </div>
 						    	<div class="link-box">
 						    		<a href="http://mylistbox.com">MyListBox</a>
+						    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					            </div>
 						    </div>
 						  </div>
@@ -421,22 +425,7 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Let's chat? Please fill the form bellow or email me to rpessoa[]outlook[dot]com and I’ll reply back as soon as possible. Cheers!</p>
-
-							<form method="post" action="?">
-								<div class="g-recaptcha" data-sitekey="6Le2lwoTAAAAANMC8AJu471vSv_0Gx5VSMxAGuhp"></div>
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-								
-							</form>
+							<p>Let's chat? Please fill the form bellow or email me to rpessoa[@]outlook[dot]com and I’ll reply back as soon as possible. Cheers!</p>
 
 						</div>
 					</section>
@@ -483,6 +472,21 @@
 					      
 					    }, 100);
 				});
+
+					$('.modal').on('hidden.bs.modal', function () {
+					    // do something…
+					    //console.log("Close model view");
+						toggleVideo('pauseVideo');
+					})
+
+
+					function toggleVideo(state) {
+					     $('iframe[src*="https://www.youtube.com/embed/"]').each(function(i) {
+				            //var func = this === frame ? 'playVideo' : 'pauseVideo';
+				            this.contentWindow.postMessage('{"event":"command","func":"' + state + '","args":""}', '*');
+				        });
+					}
+
 			</script>
 	</body>
 </html>
