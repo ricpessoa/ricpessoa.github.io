@@ -1,5 +1,7 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+/*@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");*/
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700");
+
 
 
 /* Reset */
@@ -1550,7 +1552,7 @@
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Ubuntu', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1569,7 +1571,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Ubuntu', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;

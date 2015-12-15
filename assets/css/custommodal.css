@@ -4,7 +4,7 @@
 }
 
 .description-box {
-    font: 11px/21px "opensans-light",sans-serif;
+    font: 11px/21px "Ubuntu",sans-serif;
     letter-spacing: 2px;
     text-align: left;
 }
@@ -14,13 +14,13 @@
 }
 
 .modal-content .description-box h4 {
-    font: 15px/24px "opensans-bold",sans-serif;
+    font: 15px/24px "Ubuntu",sans-serif;
     margin-bottom: 12px;
     color: #111;
 }
 
 .modal-content{
-	font:15px/24px 'opensans-bold', sans-serif;
+	font:15px/24px 'Ubuntu', sans-serif;
 }
 
 .modal-content .link-box {
@@ -31,7 +31,7 @@
 
 .modal-content .link-box a {
     color: #fff;
-    font: 11px/21px 'opensans-bold', sans-serif;
+    font: 11px/21px 'Ubuntu', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     cursor: pointer;
