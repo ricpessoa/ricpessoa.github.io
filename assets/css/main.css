@@ -44,7 +44,10 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 .thumbnail a{
 	cursor: pointer;
 }

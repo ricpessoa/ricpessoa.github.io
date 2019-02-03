@@ -7,13 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 				
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/timeline.css" />
-		<link rel="stylesheet" href="assets/css/skillsbar.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/custommodal.css">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/effects.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
+		<link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"/>
 		<!-- Latest compiled and minified CSS -->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -34,17 +32,6 @@
 
 					<!-- Nav -->
 						<nav id="nav">
-							<!--This model nav expects links in one of two formats:
-
-								1. Hash link (scrolls to a different section within the page)
-
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
 							<ul>
 								<li>
 									<a href="#top" id="top-link" class="skel-layers-ignoreHref">
@@ -79,7 +66,6 @@
 							<li><a href="https://pt.linkedin.com/in/ricpess" class="icon fa-linkedin"><span class="label">Linked in</span></a></li>
 							<li><a href="https://github.com/ricpessoa" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="https://www.facebook.com/rdpessoa" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://plus.google.com/117511392420164591257/" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
 							<li><a href="mailto:rpessoa@outlook.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
@@ -106,163 +92,318 @@
 						</div>
 					</section>
 
-				
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+<!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <header>
+                <h2>Portfolio</h2>
+              </header>
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Here you can see some works that I've been involved over time. Keep in touch...</p>
-
-							<div class="row">
-
-
-			<div class="4u 12u$(mobile)">				
-				<div class="hover ehover13">
-					<img class="img-responsive" src="images/lapa_logo.png" alt="">
-						<div class="overlay">
-							<h2>LAPA</h2>
-							<button class="info nullbutton" data-toggle="modal" data-target=".bs-example-modal-lapa">see
-							</button>
-						</div>				
-				</div>
+              <p>Here you can see some works that I've been involved over time. Keep in touch...</p>
+        <div class="row-porfolio">
+          <div class="col-md-2 col-sm-2 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="far fa-eye fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/cellar-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>MyCellar</h4>
+              <p class="text-muted">Personal App</p>
             </div>
-
-            <div class="4u 12u$(mobile)">				
-				<div class="hover ehover13">
-					<img class="img-responsive" src="images/childsafe_logo.png" alt="">
-						<div class="overlay">
-							<h2>ChildSafe</h2>
-							<button class="info nullbutton" data-toggle="modal" data-target=".bs-example-modal-childsafe">see
-							</button>
-						</div>				
-				</div>
+          </div>
+          <div class="col-md-2 col-sm-2 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="far fa-eye fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/ricardo-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Ricardo.ch</h4>
+              <p class="text-muted">App work</p>
             </div>
-
-
-			<div class="4u 12u$(mobile)">				
-				<div class="hover ehover13">
-					<img class="img-responsive" src="images/ticket_logo.jpg" alt="">
-						<div class="overlay">
-							<h2>ISEP Ticket</h2>
-							<button class="info nullbutton" data-toggle="modal" data-target=".bs-example-modal-ticket">see
-							</button>
-						</div>				
-				</div>
+          </div>
+          <div class="col-md-2 col-sm-2 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="far fa-eye fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/lapa-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Lapa </h4>
+              <p class="text-muted">App Work</p>
             </div>
-
-            <div class="4u 12u$(mobile)">				
-				<div class="hover ehover13">
-					<img class="img-responsive" src="images/mylistbox_logo.png" alt="">
-						<div class="overlay">
-							<h2>MyListBox</h2>
-							<button class="info nullbutton"  alt=""  data-toggle="modal" data-target=".bs-example-modal-mylistbox">see
-							</button>
-						</div>				
-				</div>
+          </div>
+          <div class="col-md-2 col-sm-2 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="far fa-eye fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/childsafe-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>ChildSafe</h4>
+              <p class="text-muted">Master's Project</p>
             </div>
+          </div>
+          <div class="col-md-2 col-sm-2 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="far fa-eye fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/isep-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>IsepKey</h4>
+              <p class="text-muted">Academic Project</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="far fa-eye fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/listbox-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>MyListBox</h4>
+              <p class="text-muted">Personal Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						</div>
 
 
-						<!-- Large modal -->
-						<div class="modal fade bs-example-modal-lapa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-						  <div class="modal-dialog modal-lg">
+<!-- Portfolio Modals -->
 
-						    <div class="modal-content">
-						    	<img class="scale-with-grid" src="images/lapa_app.jpg" alt="">
-						    	<div class="description-box">
-							      <h4>Lapa App</h4>
-							      <p>The App Lapa communicates with object finder Lapa, a tiny Bluetooth Device that finds stuff you always lose: like your Keys. In the application you can add Lapas, download list of Lapas, share Lapas with your friends, community tracker, see last location on map, reported as lost, post on facebook and so on. Learn more in <a href="http://lapa-app.com">lapa-app.com</a>.</p>
-				               <span class="categories"><i class="fa fa-tag"></i>iOS, Android</span>
-						      </div>
-						    	<div class="link-box">
-					               <a href="https://itunes.apple.com/us/app/lapa-find-your-keys-bags-wallets/id891485732?mt=8">AppStore</a>
-					               <a href="https://play.google.com/store/apps/details?id=lapastudio.lapaapp">Google Play</a>
-					               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					            </div>
-						    </div>
-						  </div>
-						</div>
+    <!-- MYCELLAR -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">MyCellar</h2>
+                  <p class="item-intro text-muted">Personal project to improve my Swift skills.</p>
+                  <p>Me and my girlfriend had been facing an issue when we are shopping - sometimes we didn’t know the current stock of our items at home and we bought too many or no need. Also, sometimes we didn’t know if the price of a specific item is a good deal or not. Of this need was born MyCellar, an application to manage the inventory, to create shopping list and to record a price history. The application has some other features like scan barcodes to easily find an article, add stores, record price, share shopping lists and also create categories and items.</p>
+                  <img class="img-fluid d-block mx-auto" src="images/portfolio/cellar-app.jpg" alt="">
 
-						<div class="modal fade bs-example-modal-childsafe" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-						  <div class="modal-dialog modal-lg">
+                  <ul class="list-inline">
+                    <li>Date: started Dec 2018</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-						    <div class="modal-content">
-						    	<!-- <div class="embed-responsive embed-responsive-16by9">
-								  <iframe class="embed-responsive-item" src="https://youtu.be/eQ0GWUEwEKI"></iframe>
-								</div> -->
-								<div class="embed-responsive embed-responsive-16by9">
-								    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eQ0GWUEwEKI?enablejsapi=1"></iframe>
-								</div>
-						    	<div class="description-box">
-							      <h4>ChildSafe</h4>
-							      <p>The Master's thesis was studied the various NoSQL database systems. ChildSafe born as proof of concept using a NoSQL database, more precisely, CouchDB server a database document oriented. ChidSafe is a children monitoring platform comprised of web and android application. All information is send by a tiny device with GPS, battery status, temperature and some others features.
-								  The project use some technologies like PHP, WebSockets, JQuery, Bootstrap and etc.
-								  Google Maps Api. See the demo in the video above. 
-									</p>
-				               <span class="categories"><i class="fa fa-tag"></i>Android, Web Development, NoSQL</span>
-						      </div>
-						    	<div class="link-box">
-						    		<p><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></p>
-						    		
-					            </div>
-						    </div>
-						  </div>
-						</div>
+    <!-- RICARDO.CH-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Ricardo.ch</h2>
+                  <p>Ricardo.ch is the biggest second-hand marketplace of Switzerland. For 2 years, I had the opportunity to work in 2 separated projects Ricardo.ch and Auto-Ricardo, one in Xamarin framework (iOS & Android) and other in native (iOS & Android), respectively. I’ve worked in a Scrum team of 8 members and it was a big challenge to learn and work with all stack technologies, processes and, at the same time, maintaining 2 applications with a release cycle of every 2 weeks. Our team was also responsible to build our mobile API to access the data, so I had the opportunity to work with Microservices using Go language.</p>
+                  <img class="img-fluid d-block mx-auto" src="images/portfolio/ricardo-app.jpg" alt="">
+                  <div>
+                      <a href="https://itunes.apple.com/ch/app/ricardo-ch/id429185033" target="_blank" rel="noopener noreferrer"><img class="badge-store" src="images/portfolio/app-store.png"></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.qxl.Client" target="_blank" rel="noopener noreferrer"><img class="badge-store" src="images/portfolio/google-play.png"></a>
+                  </div>
+                  <ul class="list-inline">
+                    <li>Date: January 2017 to January 2019</li>
+                    <li>Mobile Developer</li>
+                    <li>Xamarin, C#, Go, Swift, Java</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-						<div class="modal fade bs-example-modal-mylistbox" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-						  <div class="modal-dialog modal-lg">
+    <!-- LAPA -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Lapa</h2>
+                  <p>Lapa device it’s a tiny Bluetooth tracker to attach to your belongings that helps you to locate your items. I joined this start-up to improve the UX with designer’ help and to implement the new features for both iOS and Android. I’m proud to have been part of this project, help to lunch the crowdfunding campaign, from the conception of a product to shipping to the customer. Learn more in <a href="http://findlapa.com">findlapa.com</a></p>
+                  <img class="img-fluid d-block mx-auto" src="images/portfolio/lapa-app.jpg" alt="">
+                  <div>
+                      <a href="https://itunes.apple.com/us/app/lapa-bluetooth-tracker/id891485732" target="_blank" rel="noopener noreferrer"><img class="badge-store" src="images/portfolio/app-store.png"></a>
+                      <a href="https://play.google.com/store/apps/details?id=lapastudio.lapaapp" target="_blank" rel="noopener noreferrer"><img class="badge-store" src="images/portfolio/google-play.png"></a>
+                  </div>
+                  <ul class="list-inline">
+                    <li>Date: June 2015 to December 2016</li>
+                    <li>Mobile Developer</li>
+                    <li>Java, Swift, UX</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-						    <div class="modal-content">
-						    	
-						    	<!-- <div class="embed-responsive embed-responsive-16by9">
-								  <iframe class="embed-responsive-item" src="https://youtu.be/eQ0GWUEwEKI"></iframe>
-								</div> -->
-								<div class="embed-responsive embed-responsive-16by9">
-								    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PeDbaTP_eqY?enablejsapi=1"></iframe>
-								</div>
-						    	<div class="description-box">
-							      <h4>MyListBox</h4>
-							      <p> My first mobile application was in iOS to a project called MyListBox.
-									The main goal of application is to create list of gifts, change gifts with friends and family, suggest gifts, send friend invites and so on. This application was developed in Objective-C and use technologies like Core Data, change information in XML, sync information with server. This application was simple but give some knowledge and skills in mobile applications. You can see a little demo above and to learn more about this project visit the website <a href="http://mylistbox.com">mylistbox.com</a>.
-								  </p>
-				               <span class="categories"><i class="fa fa-tag"></i>iOS, Core Data and XML</span>
-						      </div>
-						    	<div class="link-box">
-						    		<a href="http://mylistbox.com">MyListBox</a>
-						    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					            </div>
-						    </div>
-						  </div>
-						</div>
+    <!-- CHILDSAFE -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">ChildSafe</h2>
+                  <p>ChildSafe is a platform to monitoring children using a device to integrate in a shoe or using as bracelet. During my master thesis, I decided to study NoSQL databases and how well they solve BigData and, most important, how they adapt with different kind of information. Therefore, ChildSafe was born as proof of concept using CouchDB server, a document DB. I’ve developed a web and mobile applications and given a tiny device with GPS, battery status, temperature and some others features, the platform was able to adapt, tracking the child and notify the caregiver. See the demo in the video.</p>
 
-<!-- Large modal -->
-						<div class="modal fade bs-example-modal-ticket" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-						  <div class="modal-dialog modal-lg">
+                  <div class="embed-youtube">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eQ0GWUEwEKI?enablejsapi=1" allowfullscreen></iframe>
+                    </div>
+                  </div>
 
-						    <div class="modal-content">
-						    	<img class="scale-with-grid" src="images/ticket_app.jpg" alt="">
-						    	<div class="description-box">
-							      <h4>Isep Ticket</h4>
-							      <p>Mobile System a discipline in masters in Computer Science as final work it was proposed students to develop an application in Android.
-							      	My project proposal was to develop a ticket validation system through Qr Codes which the main goal of the platform is to allow users to make a request access codes of services that uses queues and restricted access.
-									To do that was developed a application to authenticate Qr Codes through camera feature, and the second application witch allow user signup and login, request tickets for queues and restricted access. In the case of queues systems the users receive updates of number called. You can see some screenshots in the image above.</p>
-				               <span class="categories"><i class="fa fa-tag"></i>Android, ZXing library,Google Cloud Messaging, PHP, MySQL </span>
-						      </div>
-						    	<div class="link-box">
-					              <p>
-					               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					           	  </p>
-					            </div>
-						    </div>
-						  </div>
-						</div>
+                  <ul class="list-inline">
+                    <li>Date: September 2014</li>
+                    <li>NoSQL, PHP, Java, WebSockets</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-					</section>
+    <!-- ISEP TICKET -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">ISEP Ticket </h2>
+                  <p>In Mobile System, a course in my masters in Computer Science, I had as final work to develop an application in Android. My project proposal was to develop a ticket validation system through QrCodes which the main goal was to allow users to make an access codes’s request of the services that uses queues and restricted access. To do that I’ve developed an application to authenticate QrCodes through camera feature, and a second application which allow users to sign-up or login, request tickets for queues and restricted access. In the case of queues systems, the users receive updates of the number called by push notification. You can see some screenshots in the image above.</p>
+                  <img class="img-fluid d-block mx-auto" src="images/portfolio/isep_app.jpg" alt="">
+
+                  <ul class="list-inline">
+                    <li>Date: April 2013</li>
+                    <li>Android, Java, ZXing library, Google Cloud Messaging, PHP, MySQL</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MYLISTBOX -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">MyListBox</h2>
+                  <p>My first mobile application was in iOS for a project called MyListBox. The main goal of this application was to create list of gifts, change gifts with friends and family, suggest gifts, send friend invites and so on. This application was developed in Objective-C and use technologies like Core Data, change information in XML, sync information with server. You can see a little demo above, but unfortunately, the project is not available anymore.</p>
+                 
+                  <div class="embed-youtube">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PeDbaTP_eqY?enablejsapi=1" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <ul class="list-inline">
+                    <li>Date: June 2012</li>
+                    <li>Objective-C</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+									
 <!-- About Me -->
 					<section id="about" class="three">
 						<div class="container">
@@ -273,144 +414,9 @@
 
 							<a href="#" class="image featured"><img src="images/about_picture.jpg" alt="" /></a>
 							
-						 	<p class="text-justify">I'm a Software Engineer from Porto, Portugal with 3 years of experience. I have Degree (2012) and MSc (2014) in Informatics Engineer from Instituto Superior de Engenharia do Porto. I start develop mobile applications in 2012. My expert area is native Android development but I also develop native application in iOS and web development in PHP. Right now my focus is to specialize in the development of mobile applications, Android and iOS, enjoy a good coding challenge.<br>The offline life I like traveling, exploring, taking pictures. I also have some hobbies reading, playing football, I'm learning to surf.</p>
-
-						 	<h3>Summary Skills</h3>
-						 		
-							<div>
-								<!-- Nav tabs -->
-								<ul class="nav nav-tabs" role="tablist">
-									<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Programming Languages</a></li>
-									<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">IDE</a></li>
-								</ul>
-
-								<!-- Tab panes -->
-								<div class="tab-content">
-									<div role="tabpanel" class="tab-pane active" id="home">
-										<!-- Skills Programmer Progress Bar -->
-									    <section id="skills-pgr">
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="75">
-									                <span>Java (8/10)</span>
-									            </div>
-									        </div>
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="50">
-									                <span>iOS (7/10)</span>
-									            </div>
-									        </div>
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="60">
-									                <span>PHP (6/10)</span>
-									            </div>
-									        </div>
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="60">
-									                <span>JavaScript/jQuery (6/10)</span>
-									            </div>
-									        </div>
-									    </section>
-									</div>
-									<div role="tabpanel" class="tab-pane" id="profile">
-										<!-- Skills IDES Progress Bar -->
-									    <section id="skills-pgr">
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="85">
-									                <span>Android Studio (9/10)</span>
-									            </div>
-									        </div>
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="80">
-									                <span>NetBeans (8/10)</span>
-									            </div>
-									        </div>
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="70">
-									                <span>Xcode (7/10)</span>
-									            </div>
-									        </div>
-									        <div class="progress">
-									            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="70">
-									                <span>Sublime Text 2 (7/10)</span>
-									            </div>
-									        </div>
-									    </section>
-									</div>
-								</div>
-							</div>
-
-							<div class="container">
-							    <div class="page-header">
-							        <h3>My timeline</h3>
-							    </div>
-							    <ul class="timeline">
-							        <li>
-							          <div class="timeline-badge success"><i class="glyphicon glyphicon glyphicon-book"></i></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Degree Informatics Engineering</h4>
-							              <small class="text-muted"><i class="glyphicon glyphicon-time"></i> September 2008 - June 2012 (4 years)</small>
-							            </div>
-							          </div>
-							        </li>
-
-							         <li class="timeline-inverted">
-							          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">iOS Application for MyListBox</h4>
-							              <small class="text-muted"><i class="glyphicon glyphicon-time"></i> March 2013 – July 2013 (5 months)</small>
-							            </div>
-							          </div>
-							        </li>
-
-									<li>
-							          <div class="timeline-badge success"><i class="glyphicon glyphicon glyphicon-book"></i></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Masters Informatics Engineering</h4>
-							              <small class="text-muted"><i class="glyphicon glyphicon-time"></i> September 2012 - October 2014 (2 years)</small>
-							            </div>
-							          </div>
-							        </li>
-
-									<li class="timeline-inverted">
-							          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Android and Web developer in Fraunhofer, Portugal</h4>
-							              <small class="text-muted"><i class="glyphicon glyphicon-time"></i> June 2013 – November 2013 (6 months)</small>
-							            </div>
-							          </div>
-							        </li>
-
-							        <li class="timeline-inverted">
-							          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Android and Web developer in CeNTI, Portugal</h4>
-							              <small class="text-muted"><i class="glyphicon glyphicon-time"></i> December 2013 – May 2015 (1 year and 7 months)</small>
-							            </div>
-							          </div>
-							        </li>
-
-							        <li class="timeline-inverted">
-							          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Mobile developer in Lapa Studio, Portugal</h4>
-							              <small class="text-muted"><i class="glyphicon glyphicon-time"></i> June 2015 – Present</small>
-							            </div>
-							          </div>
-							        </li>
-							    </ul>
-							</div>
-
-
+						 	<p class="text-justify">I’ve been working for 5 years in mobile environments, for both platforms iOS and Android. During this 5 years I worked with several technologies like web development, server side, SQL and NoSQL databases and so on. I have been working with native Android and iOS and in the last 2 years I had an experience in Xamarin framework.<br>  In 2017, after concluded my master degree, I decided to have an experience abroad and I chose to move to Switzerland to put myself out of my comfort zone, and turned out to be a good experience for me. I’m always looking to learn new things, improve myself and coding.   <br>In my offline life, I like to travel, hike and explore the world, taking pictures, skating and I’m also always happy to play football.
 						</div>
 					</section>
-
-
 				
 				<!-- Contact -->
 					<section id="contact" class="four">
@@ -420,7 +426,7 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Let's chat? Please fill the form bellow or email me to rpessoa[@]outlook[dot]com and I’ll reply back as soon as possible. Cheers!</p>
+							<p>Let's chat? Send me an email to rpessoa[@]outlook[dot]com and I’ll reply back as soon as possible. Cheers!</p>
 
 						</div>
 					</section>
@@ -432,7 +438,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Ricardo Pessoa. All rights reserved.</li><li>2015</li>
+						<li>&copy; Ricardo Pessoa. All rights reserved.</li><li>2015 to 2019</li>
 					</ul>
 
 			</div>
@@ -447,32 +453,20 @@
 			<script src="assets/js/main.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 			<script type="text/javascript">
-					// Skills Progress Bar
-					$('.progress-bar').each(function() {
-					  
-					  	var $bar = $(this);
-					    var progress = setInterval(function() {
-					      
-					      var currWidth = parseInt($bar.attr('aria-valuenow'));
-					      var maxWidth = parseInt($bar.attr('aria-valuemax'));
-					      
-						  //update the progress
-					        $bar.width(currWidth+'%');
-					        $bar.attr('aria-valuenow',currWidth+5);
-					      
-					      //clear timer when max is reach
-					      if (currWidth >= maxWidth){
-					        clearInterval(progress);
-					      }
-					      
-					    }, 100);
-				});
 
-					$('.modal').on('hidden.bs.modal', function () {
-					    // do something…
-					    //console.log("Close model view");
-						toggleVideo('pauseVideo');
-					})
+				  // Hide navbar when modals trigger
+					  $('.portfolio-modal').on('show.bs.modal', function(e) {
+					    $('.navbar').addClass('d-none');
+					  })
+					  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+					    $('.navbar').removeClass('d-none');
+					  })
+
+  					$('.modal').on('hidden.bs.modal', function () {
+  					    // do something…
+  					    //console.log("Close model view");
+  						toggleVideo('pauseVideo');
+  					})
 
 
 					function toggleVideo(state) {
